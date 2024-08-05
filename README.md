@@ -31,7 +31,7 @@ Step 4: Find the add-on in the add-ons list and click on it. Select your designa
 
 Step 5: Create a GitHub Personal Access Token with "repo" scope. Ref: [GitHub's official documentation](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic).
 
-Step 6: Paste the obtained token (the one that is prefixed with `ghp_`) in the addon and click "SAVE".
+Step 6: Paste the obtained token (the one that is prefixed with `ghp_`) in the add-on and click "SAVE".
 
 Step 7: Test the add-on by attempting to browse to a private repository in a non-containerized tab. The add-on should detect the repository being private and should switch the current tab to the designated GitHub container.
 
@@ -41,7 +41,7 @@ Step 7: Test the add-on by attempting to browse to a private repository in a non
 
 -   **Private Repository Detection:** Using [GitHub API](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository), the add-on fetches the repository's metadata and checks if the repository is private. If so, it automatically switches your tab to the designated GitHub container.
 
--   **Privacy Preserving:** Apart from the request to the GitHub API, no data leaves your device. The designated GitHub container ID and Personal Access Token are stored locally in the addon's [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+-   **Privacy Preserving:** Apart from the request to the GitHub API, no data leaves your device. The designated GitHub container ID and Personal Access Token are stored locally in the add-on's [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
 ## What's New
 
