@@ -2,7 +2,7 @@
 
 <h1 align="center">
 <sub>
-<img src="https://github.com/gorhill/uBlock/blob/master/src/img/logo.svg" height="38" width="38">
+<img src="https://github.com/smilingjumbos/github_container_auto_switcher/blob/main/img/logo.svg" height="38" width="38">
 </sub>
 Github Container Auto Switcher
 </h1>
