@@ -37,36 +37,39 @@ Step 7: Test the add-on by attempting to browse to a private repository in a non
 
 ## Features
 
--   **Automatic Container Switching:** This add-on activates exclusively on GitHub pages (`github.com/*`). If you encounter a 404 error on a GitHub page, it parses the repository by extracting the owner/repo name from the URL, even if you're on a subpage like issues or pull requests.
+- **Automatic Container Switching:** This add-on activates exclusively on GitHub pages (`github.com/*`). If you encounter a 404 error on a GitHub page, it parses the repository by extracting the owner/repo name from the URL, even if you're on a subpage like issues or pull requests.
 
--   **Private Repository Detection:** Using [GitHub API](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository), the add-on fetches the repository's metadata and checks if the repository is private. If so, it automatically switches your tab to the designated GitHub container.
+- **Private Repository Detection:** Using [GitHub API](https://docs.github.com/en/rest/repos/repos?apiVersion=2022-11-28#get-a-repository), the add-on fetches the repository's metadata and checks if the repository is private. If so, it automatically switches your tab to the designated GitHub container.
 
--   **Privacy Preserving:** Apart from the request to the GitHub API, no data leaves your device. The designated GitHub container ID and Personal Access Token are stored locally in the add-on's [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
+- **Privacy Preserving:** Apart from the request to the GitHub API, no data leaves your device. The designated GitHub container ID and Personal Access Token are stored locally in the add-on's [local storage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).
 
 ## What's New
 
--   **Version 0.0.1**
-    -- Added private repository detection and automatic switching to designated GitHub container
+- **Version 0.0.2**
+  -- Prevent container swithing on github status updates, i.e. `/partials/statuses/` and `/repos/{owner}/{repo}/commits/{ref}/status` endpoints
+
+- **Version 0.0.1**
+  -- Added private repository detection and automatic switching to designated GitHub container
 
 ## Sources
 
 This add-on was built based on the following sources:
 
--   Forked off the [Switch Container Add-on](https://addons.mozilla.org/en-US/firefox/addon/switch-container/)
+- Forked off the [Switch Container Add-on](https://addons.mozilla.org/en-US/firefox/addon/switch-container/)
 
--   Contextual identities handling:
+- Contextual identities handling:
 
-    `https://github.com/mdn/webextensions-examples/blob/master/contextual-identities/context.js`
+  `https://github.com/mdn/webextensions-examples/blob/master/contextual-identities/context.js`
 
--   Pop-up html/css:
+- Pop-up html/css:
 
-    `https://github.com/mdn/webextensions-examples/blob/master/contextual-identities/context.html` (html)
+  `https://github.com/mdn/webextensions-examples/blob/master/contextual-identities/context.html` (html)
 
-    `https://github.com/mdn/webextensions-examples/blob/master/contextual-identities/context.css` (css)
+  `https://github.com/mdn/webextensions-examples/blob/master/contextual-identities/context.css` (css)
 
--   Icon:
+- Icon:
 
-    `omni.ja\chrome\browser\content\browser\`
+  `omni.ja\chrome\browser\content\browser\`
 
 ## Legal
 
