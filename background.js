@@ -125,7 +125,8 @@ chrome.webRequest.onCompleted.addListener(
       const url = new URL(details.url);
       if (
         url.hostname === "github.com" &&
-        !url.pathname.includes("/partials/")
+        !url.pathname.includes("/partials/") &&
+        !url.pathname.includes("/status")
       ) {
         if (
           !(await currentTabIsAlreadyGithubContainer(cookieStoreId)) &&
