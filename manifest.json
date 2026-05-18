@@ -4,7 +4,7 @@
   "author": "Smiling Jumbos",
   "incognito": "not_allowed",
   "description": "Github Container Auto Switcher",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "developer": {
     "name": "Smiling Jumbos",
     "url": "https://github.com/smilingjumbos/github_container_auto_switcher"
@@ -36,9 +36,7 @@
     "*://github.com/*"
   ],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
+    "scripts": ["background.js"],
     "persistent": false
   }
 }
